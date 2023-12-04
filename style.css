@@ -69,6 +69,11 @@ body * {
   margin: 4px auto;
 }
 
+.light #switch button {
+  left: 0;
+  animation: slide-button 0.2s forwards;
+}
+
 #switch button {
   top: 50%;
   width: 32px;
@@ -81,10 +86,6 @@ body * {
   position: absolute;
   z-index: 1;
   transform: translateY(-50%);
-}
-
-.light #switch button {
-  animation: slide-button 0.2s forwards;
 }
 
 #switch button:hover {
@@ -161,7 +162,7 @@ footer {
     --bg-url: url(./assets/bg-desktop.jpg);
   }
   .light {
-    --bg-url: (url(./assets/bg-desktop-light.jpg));
+    --bg-url: url(./assets/bg-desktop-light.jpg);
   }
 }
 
